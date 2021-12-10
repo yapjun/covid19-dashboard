@@ -3,7 +3,7 @@
 The COVID 19 Dashboard application retrieves the latest news from NewsAPI and COVID-19 statistics from the Public Health England API. Data updates can be scheduled by the user on any time of the day.
 
 ## Prerequisites
-Python version 3.9.9. is needed, it can be downloaded from the official [Python.org](https://www.python.org/downloads/release/python-399/) website.
+Python version 3.9.9 is needed, it can be downloaded from the official [Python.org](https://www.python.org/downloads/release/python-399/) website.
 
 
 ## Module Installations
