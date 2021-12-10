@@ -31,7 +31,7 @@ After installing the prerequisites, you will need to setup the configuration fil
 This COVID 19 Dashboard does not support location and nations outside of the UK.
 
 ## Usage
-After setting up the covid_config.cfg file, you're all set! If you have an IDE, you may use that to open up main.py and try running the COVID-19 dashboard. 
+After setting up the covid_config.cfg file, put some images in /static/images and you're all set! If you have an IDE, you may use that to open up main.py and try running the COVID-19 dashboard. 
 
 Or you may run main.py from your operating system's command line.
 First, you will need to get the file path to main.py. To do that, go to your file location and find main.py, then right-click on it and click on Properties. You will find a 'Location' segment on the Properties window. Copy the entire file path.
