@@ -3,7 +3,7 @@ from flask import Flask, render_template, request, Markup
 import logging
 import sys
 
-from covid_data_handler import schedule_covid_updates, update_covid_data, check_covid_updates
+from covid_data_handler import schedule_covid_updates, update_covid_data, check_covid_updates, remove_task
 from covid_news_handling import news_API_request, config_file, json, parse_news_csv, check_news_updates, remove_article, schedule_news_updates
 
 # set up logs
@@ -206,9 +206,14 @@ def parse_url():
         log.debug("Calling remove_article func, key: %s", notif)
         articles_list = remove_article(notif)
 
+    if update_item != None:
+        log.debug("Calling remove_task func, key: %s", update_item)
+        remove_task(update_item)
+        print("lmao")
+
     # render index.html with params to populate the site with data
     return render_template('index.html', title="Covid Updates",
-            favicon = favicon_url, 
+            favicon = favicon_url,
             image = image_url, location = config_location,
             local_7day_infections = local_last7days_cases,
             nation_location = config_nation,

@@ -340,3 +340,7 @@ def check_covid_updates(displayed_updates_list: list) -> list:
         log.debug("Updates list is empty")
 
     log.debug("Returned updates list: %s", displayed_updates_list)
+
+def remove_task(update_item: str) -> None:
+    log.debug("Removing: %s from threads", update_item)
+    
